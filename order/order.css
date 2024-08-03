@@ -1,0 +1,164 @@
+body {
+    background-color: hsl(225, 100%, 94%);
+}
+
+/* containers */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.598), 0 6px 20px 0 rgba(0, 0, 0, 0.553);
+}
+
+.middle-text {
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    width: 300px;
+
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    background-color: hsl(225, 100%, 98%);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.proceed-button {
+    cursor: pointer;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    background-color: hsl(245, 75%, 52%);
+    opacity: 0.7;
+    width: 300px;
+    padding: 15px;
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.598), 0 6px 20px 0 rgba(0, 0, 0, 0.553);
+    transition: 1s ease;
+    animation-name: example;
+    animation-duration: 2s;
+
+}
+
+.cancel {
+    cursor: pointer;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 250px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 20px;
+    color: hsl(224, 23%, 55%);
+    transition: 0.7s ease;
+
+
+}
+
+
+/* images */
+.image {
+    justify-self: flex-start;
+    width: 400px;
+    height: auto;
+
+}
+
+.image img {
+    background-size: cover;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+/* text */
+h1 {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: hsl(223, 47%, 23%);
+    margin: 0 auto;
+    padding: 25px;
+}
+
+p {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0 auto;
+    height: auto;
+    width: 300px;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+span {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: hsl(223, 47%, 23%);
+    font-size: 15px;
+    font-weight: 700;
+
+
+}
+
+.numbers {
+    flex-direction: column;
+    margin-left: 8px
+}
+
+.change {
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: -40px;
+    transition: 0.7s;
+}
+
+
+
+
+/* icons */
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 40;
+}
+
+/* animations */
+.proceed-button:hover {
+    transform: translateY(-6px);
+    opacity: 0.6;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+    transform: translateY(-6px);
+}
+
+.change:hover {
+    color: hsl(245, 75%, 52%);
+}
+
+@media screen and(min-width:375px) {
+    .container {
+        width: 400px;
+    }
+}
